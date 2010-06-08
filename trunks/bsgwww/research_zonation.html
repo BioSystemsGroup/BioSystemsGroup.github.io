@@ -1,0 +1,2432 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="zonation_files/filelist.xml">
+<link rel=Edit-Time-Data href="zonation_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Multi-Agent Model of Hepatic Zonation</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="State" downloadurl="http://www.5iamas-microsoft-com:office:smarttags"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="PlaceType"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="PlaceName"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="country-region"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="City" downloadurl="http://www.5iamas-microsoft-com:office:smarttags"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="place" downloadurl="http://www.5iantlavalamp.com/"/>
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>BestFit</w:Zoom>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Batang;
+	panose-1:2 3 6 0 0 1 1 1 1 1;
+	mso-font-alt:\BC14\D0D5;
+	mso-font-charset:129;
+	mso-generic-font-family:auto;
+	mso-font-format:other;
+	mso-font-pitch:fixed;
+	mso-font-signature:1 151388160 16 0 524288 0;}
+@font-face
+	{font-family:Times;
+	panose-1:2 2 6 3 5 4 5 2 3 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:536902279 -2147483648 8 0 511 0;}
+@font-face
+	{font-family:"\@Batang";
+	mso-font-charset:129;
+	mso-generic-font-family:auto;
+	mso-font-pitch:auto;
+	mso-font-signature:0 0 0 0 0 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:Batang;}
+p.MsoFootnoteText, li.MsoFootnoteText, div.MsoFootnoteText
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:Batang;}
+span.MsoFootnoteReference
+	{vertical-align:super;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 27.0pt;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:85658556;
+	mso-list-template-ids:-1789876972;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1
+	{mso-list-id:122818093;
+	mso-list-template-ids:-119221072;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l1:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2
+	{mso-list-id:173888680;
+	mso-list-template-ids:-80818866;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l2:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l2:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3
+	{mso-list-id:303237912;
+	mso-list-template-ids:-1781085468;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l3:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4
+	{mso-list-id:794759922;
+	mso-list-template-ids:-482205296;}
+@list l4:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l4:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5
+	{mso-list-id:823742258;
+	mso-list-template-ids:-45583800;}
+@list l5:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l5:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l6
+	{mso-list-id:978730254;
+	mso-list-template-ids:573238340;}
+@list l6:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l6:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l6:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l6:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l6:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l6:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l6:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l6:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l6:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l7
+	{mso-list-id:1062101731;
+	mso-list-template-ids:-974900016;}
+@list l7:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l7:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l7:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l7:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l7:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l7:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l7:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l7:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l7:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l8
+	{mso-list-id:1233589051;
+	mso-list-template-ids:-726655872;}
+@list l8:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l8:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l8:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l8:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l8:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l8:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l8:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l8:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l8:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l9
+	{mso-list-id:1245989264;
+	mso-list-template-ids:-1478351528;}
+@list l9:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l9:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l9:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l9:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l9:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l9:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l9:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l9:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l9:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l10
+	{mso-list-id:1555505292;
+	mso-list-template-ids:-1796195938;}
+@list l10:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l10:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l10:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l10:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l10:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l10:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l10:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l10:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l10:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l11
+	{mso-list-id:1713265334;
+	mso-list-template-ids:1840959748;}
+@list l11:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l11:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l11:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l11:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l11:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l11:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l11:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l11:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l11:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l12
+	{mso-list-id:1808472017;
+	mso-list-template-ids:-1300435138;}
+@list l12:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l12:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l12:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l12:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l12:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l12:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l12:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l12:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l12:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l13
+	{mso-list-id:1856071782;
+	mso-list-template-ids:-1540733096;}
+@list l13:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l13:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l13:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l13:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l13:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l13:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l13:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l13:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l13:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="3074"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:16.0pt'>Modeling the Collective Behavior of Hepatocytes in
+Clearing Toxins</span></b></p>
+
+<p class=MsoFootnoteText align=center style='margin-top:12.0pt;text-align:center'><span
+style='font-size:12.0pt'>Shahab Sheikh-Bahae<span style='letter-spacing:1.0pt'>i</span><sup>1</sup>
+and C. Anthony Hunt<sup><span style='layout-grid-mode:line'> 1,2</span><o:p></o:p></sup></span></p>
+
+<p class=MsoNormal align=center style='margin-top:12.0pt;text-align:center'><sup><span
+style='font-family:Times;mso-bidi-font-family:"Times New Roman";layout-grid-mode:
+line'>1 </span></sup><span style='font-family:Times;mso-bidi-font-family:"Times New Roman";
+layout-grid-mode:line'>The UCSF/UCB Joint Graduate Group in Bioengineering, <st1:PlaceType
+w:st="on">University</st1:PlaceType> of <st1:PlaceName w:st="on">California</st1:PlaceName>,
+<st1:City w:st="on">Berkeley</st1:City>, <st1:State w:st="on">CA</st1:State>, <br>
+<sup>2 </sup>The Department of Biopharmaceutical Sciences, BioSystems Group, <st1:PlaceType
+w:st="on">University</st1:PlaceType> of <st1:PlaceName w:st="on">California</st1:PlaceName>,
+<st1:place w:st="on"><st1:City w:st="on">San Francisco</st1:City>, <st1:State
+ w:st="on">CA</st1:State></st1:place> <o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-top:12.0pt;text-align:center'><span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Times;mso-bidi-font-family:
+"Times New Roman";layout-grid-mode:line'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt'>I. Methods</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:10.0pt'>&nbsp;</span></b></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;mso-padding-alt:0in 0in 0in 0in'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=322 valign=top style='width:241.25pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>A</p>
+  </td>
+  <td width=280 valign=top style='width:209.65pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>B</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td width=322 style='width:241.25pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><img width=311
+  height=133 id="_x0000_i1025"
+  src="zonation_images/image001.gif"></p>
+  </td>
+  <td width=280 valign=top style='width:209.65pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><img width=348 height=254 id="_x0000_i1026"
+  src="zonation_images/image002.gif"></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><b><span style='font-size:10.0pt'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b>Figure 1.</b> The schematic of the simple game (A) and
+its mapping to the liver (B).</p>
+
+<p class=MsoNormal><b>Legend</b>: </p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l5 level1 lfo1;tab-stops:list .5in'>Filled
+     circles (A<sub>1</sub> and A<sub>2</sub>): Agents 1 and 2 (also referred
+     to as players). </li>
+ <li class=MsoNormal style='mso-list:l5 level1 lfo1;tab-stops:list .5in'>Unfilled
+     circles (N<sub>1</sub> and N<sub>2</sub>):&nbsp; Nature players (map to
+     extracellular spaces, such as sinusoidal vessels etc, in periportal and
+     perivenous regions, respectively)</li>
+ <li class=MsoNormal style='mso-list:l5 level1 lfo1;tab-stops:list .5in'>Arrows:
+     possible routs a compound can take. </li>
+</ul>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l8 level1 lfo2;tab-stops:list .5in'>(<i>-c1,-c2</i>)
+     at terminal nodes indicates the costs of <i>c1</i> and <i>c2</i> imposed
+     to players 1 and 2, respectively. c<sub>i</sub> can be one of the
+     following:</li>
+ <ul style='margin-top:0in' type=circle>
+  <li class=MsoNormal style='mso-list:l8 level2 lfo2;tab-stops:list 1.0in'>0:
+      no cost,</li>
+  <li class=MsoNormal style='mso-list:l8 level2 lfo2;tab-stops:list 1.0in'>e:
+      cost of elimination (e.g. energy/resource consumption),</li>
+  <li class=MsoNormal style='mso-list:l8 level2 lfo2;tab-stops:list 1.0in'>T:
+      toxicity costs (e.g. the damage caused by the compound to the external
+      tissue). </li>
+ </ul>
+ <li class=MsoNormal style='mso-list:l8 level1 lfo2;tab-stops:list .5in'>L<sub>i</sub>:
+     percentage of incoming compounds that player i does not encounter.</li>
+ <li class=MsoNormal style='mso-list:l8 level1 lfo2;tab-stops:list .5in'>P<sub>i</sub>:
+     percentage of encountered compounds that player i eliminates.</li>
+</ul>
+
+<p class=MsoNormal><b>Description of the game:</b></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l10 level1 lfo3;tab-stops:list .5in'>At
+     each time step one simulated compound enters the game:</li>
+</ul>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-13.5pt'>1. Nature
+forces at N1 pass the compound to N2 with probability L1; or alternatively,
+pass it to player 1 with probability 1-L1.</p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-13.5pt'>2. Player 1 either
+eliminates the compound with probability P1 and pays the elimination cost (e),
+or takes the risk and pass the compound to N2 with probability 1-P1. </p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-13.5pt'>3. Nature
+forces at N2 pass the compound to the terminal node with probability L2, in
+which case both players have to pay the toxicity cost T. Conversely, the forces
+might pass the compound to player 2, with probability 1-L2.</p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-13.5pt'>4. Player 2
+either eliminates the compound with probability P2 and pays the elimination
+cost (e), or takes the risk and passes the compound to the terminal node and
+makes both players pay the toxicity cost T.</p>
+
+<p class=MsoNormal><b>Mappings to the liver: </b></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l12 level1 lfo4;tab-stops:list .5in'>Players
+     1 and 2: xenobiotic eliminating agents in the periportal and perivenous
+     regions of the liver, respectively. </li>
+ <li class=MsoNormal style='mso-list:l12 level1 lfo4;tab-stops:list .5in'>P<sub>i</sub>:
+     Clearance Strategy of player i -- the probability that the xenobiotic
+     eliminating agents in zone i eliminate an encountered compound. In other
+     words, it maps to the clearance probability as a consequence of all
+     complex stochastic events that eventually result in elimination of the
+     compound seen by zone i. The events include: binding to transporters,
+     membrane proteins, or enzymes, metabolism, excretion to bile, etc.</li>
+ <li class=MsoNormal style='mso-list:l12 level1 lfo4;tab-stops:list .5in'>L<sub>i</sub>:
+     Percentage of incoming compounds that cannot be seen by zone i due to
+     physical constraints outside cells’ control. Examples include: remaining
+     out of hepatocytes’ reach by staying inside the sinusoidal vessels due to
+     saturated or damaged transporters, etc.&nbsp; L<sub>i</sub> is the
+     percentage of compounds players i cannot process even with maximum effort.
+     </li>
+</ul>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:none;border-bottom:solid windowtext 3.0pt;padding:0in 0in 1.0pt 0in'>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><img width=588 height=420 id="_x0000_i1027"
+src="zonation_images/image003.gif"
+alt="Text Box:  &#13;&#10;&#13;&#10;&#13;&#10;"></p>
+
+<p class=MsoNormal><b>Figure 2. </b>A<b> </b>physiologically-based model to
+analyze the effects of hepatic zonation on toxicity exposure to the whole body.
+</p>
+
+<p class=MsoNormal><b>Legend</b>: </p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l3 level1 lfo5;tab-stops:list .5in'>Boxes:
+     reservoir compartments </li>
+ <li class=MsoNormal style='mso-list:l3 level1 lfo5;tab-stops:list .5in'>Arrows:
+     xenobiotic flow directions</li>
+ <li class=MsoNormal style='mso-list:l3 level1 lfo5;tab-stops:list .5in'>q's:
+     xenobiotic flow rate constants</li>
+ <li class=MsoNormal style='mso-list:l3 level1 lfo5;tab-stops:list .5in'>X<sub>i</sub>’s:
+     xenobiotic concentration in corresponding reservoir compartment shown</li>
+ <li class=MsoNormal style='mso-list:l3 level1 lfo5;tab-stops:list .5in'>p<sub>i</sub>:
+     probability that a xenobiotic particle passes through path i. </li>
+</ul>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b>Description of the model:</b></p>
+
+<p class=MsoNormal>The model uses a traditional physiologically-based PKPD
+approach.&nbsp; Liver is assumed to have 2 zones: periportal (zone 1) and
+pervenous (zone 2). Compounds in the liver are assumed to stochastically take
+one of the four paths with probability p<sub>i</sub>:</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l0 level1 lfo6;tab-stops:list .5in'>Path
+     1: neither of the two zones encounters the compound. </li>
+ <li class=MsoNormal style='mso-list:l0 level1 lfo6;tab-stops:list .5in'>Path
+     2: only zone 1 encounters the compound. </li>
+ <li class=MsoNormal style='mso-list:l0 level1 lfo6;tab-stops:list .5in'>Path
+     3: both zones encounter the compound. </li>
+ <li class=MsoNormal style='mso-list:l0 level1 lfo6;tab-stops:list .5in'>Path 4:
+     only zone 2 encounters the compound. </li>
+</ul>
+
+<p class=MsoNormal>There is one set of differential equations for each path. At
+each time step, one of the four sets is chosen according to the probability
+associated with the corresponding path. In this model, Zone 1 and Zone 2 eliminate
+compounds independent of each other. We assume that the mechanisms of
+xenobiotic elimination in the liver (including uptake transport, biliary efflux
+and metabolism) follow saturable Michaelis-Menten kinetics. Intrinsic clearance
+of each zone is assumed to be CL<sub>i</sub> = V<sub>max,i</sub>/K<sub>m</sub>,
+where V<sub>max </sub>&nbsp;is maximum elimination (metabolic + transport) rate
+and K<sub>m</sub> Michaelis-Menten constant. V<sub>max </sub>is assumed to be
+affected by the level of metabolic enzymes and transporters expressed by cells.
+As a result each zone has its own V<sub>max­</sub>. The two zones are assumed
+to have equal K<sub>m </sub>values. </p>
+
+<p class=MsoNormal>Further, we assume that the cost to the organism, <i>J</i>,
+is proportional to (CL<sub>1</sub>)<sup> 2 </sup>+ (CL<sub>2</sub>)<sup> 2 </sup>+
+(cAUBC)<sup>2</sup>, where CL<sub>1</sub> and CL<sub>2</sub> are intrinsic
+periportal clearance and intrinsic perivenous clearance, respectively; AUBC is
+the <u>a</u>rea <u>u</u>nder the xenobiotic-concentration-in-the-<u>b</u>lood <u>c</u>urve
+and c adjusts the relative cost contribution of a fixed dose based on
+xenobiotic<span style='font-size:10.0pt'> toxicity.</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:10.0pt'>Table 1. </span></b><span
+style='font-size:10.0pt'>&nbsp;Equations of the model for each of the four path
+shown in Figure 2.</span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;mso-padding-alt:0in 0in 0in 0in'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:135.4pt'>
+  <td width=121 valign=top style='width:90.5pt;border:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:135.4pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt'>Path 1:</span></b><o:p></o:p></p>
+  <p class=MsoNormal><sub><span style='position:relative;top:38pt'><img
+  width=164 height=111 id="_x0000_i1028"
+  src="zonation_images/image004.gif"></sub><o:p></o:p></p>
+  </td>
+  <td width=115 valign=top style='width:85.9pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt;height:135.4pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt'></span>Path 2:</span></b></p>
+  <p class=MsoNormal><sub><img width=231 height=148 id="_x0000_i1029"
+  src="zonation_images/image005.gif"></sub></p>
+  </td>
+  <td width=120 rowspan=2 style='width:1.25in;padding:0in 5.4pt 0in 5.4pt;
+  height:135.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:11.0pt'>(Equation set 1)</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes;height:7.95pt'>
+  <td width=121 valign=top style='width:90.5pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:7.95pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt'>&nbsp;</span></b></p>
+  <p class=MsoNormal><b><span style='font-size:10.0pt'>Path 3:</span></b></p>
+  <p class=MsoNormal><sub><img width=232 height=189 id="_x0000_i1030"
+  src="zonation_images/image006.gif"></sub></p>
+  </td>
+  <td width=115 valign=top style='width:85.9pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.95pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt'>&nbsp;</span></b></p>
+  <p class=MsoNormal><b><span style='font-size:10.0pt'>Path 4:</span></b></p>
+  <p class=MsoNormal><span style='font-size:10.0pt'>&nbsp;</span></p>
+  <p class=MsoNormal><sub><img width=231 height=151 id="_x0000_i1031"
+  src="zonation_images/image007.gif"></sub></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span style='font-size:11.0pt'>&nbsp;</span></p>
+
+<div style='border:none;border-bottom:solid windowtext 3.0pt;padding:0in 0in 1.0pt 0in'>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>&nbsp;</span></p>
+
+</div>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Arial;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal><img width=538 height=141 id="_x0000_i1032"
+src="zonation_images/image008.gif"></p>
+
+<p class=MsoNormal><b>Figure 3</b>. n-player expansion of the simple game presented
+in Figure 1. </p>
+
+<p class=MsoNormal><b>Legend</b>: </p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l11 level1 lfo7;tab-stops:list .5in'>Filled
+     circles (A<sub>1</sub> … A<sub>n</sub>): Agents (also referred to as
+     players). </li>
+ <li class=MsoNormal style='mso-list:l11 level1 lfo7;tab-stops:list .5in'>Unfilled
+     circles:&nbsp; nature forces out of agent’s control</li>
+ <li class=MsoNormal style='mso-list:l11 level1 lfo7;tab-stops:list .5in'>Arrows:
+     possible routs a compound can take due to natural forces and agents’
+     actions</li>
+</ul>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l1 level1 lfo8;tab-stops:list .5in'>(<i>-c1,-c2,
+     … ,c<sub>n</sub></i>) at terminal nodes indicates the costs of <i>c1</i>, <i>c2,…,c­<sub>n</sub>
+     </i>&nbsp;imposed to players 1,2,…n, respectively. c<sub>i</sub> can be
+     one of the following:</li>
+ <ul style='margin-top:0in' type=circle>
+  <li class=MsoNormal style='mso-list:l1 level2 lfo8;tab-stops:list 1.0in'>0:
+      no cost.</li>
+  <li class=MsoNormal style='mso-list:l1 level2 lfo8;tab-stops:list 1.0in'>e:
+      cost of elimination (e.g. energy/resource consumption), </li>
+  <li class=MsoNormal style='mso-list:l1 level2 lfo8;tab-stops:list 1.0in'>T:
+      toxicity costs (e.g. the damage caused by the compound to the external
+      tissue). </li>
+ </ul>
+</ul>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<p class=MsoNormal><b>Description of the game:</b></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l2 level1 lfo9;tab-stops:list .5in'>At
+     each time step one simulated compound enters the game. As it goes through
+     the agents, it either bypasses agent i with probability L<sub>i </sub>or
+     otherwise gets eliminated by player i with probability (1-L<sub>i</sub>)Pi.
+     The player that eliminates the compound pays the elimination cost (e);
+     others pay no cost. If no player eliminate the compound all players pay
+     the toxicity cost T.</li>
+ <li class=MsoNormal style='mso-list:l2 level1 lfo9;tab-stops:list .5in'>In
+     this version of the game, each player has the ability to adjust its
+     clearance strategy.&nbsp; The objective of each player is to adjust its
+     strategy to minimize its own average costs. By keeping track of
+     accumulated rewards (and penalties), players can be reinforced to learn an
+     optimal clearance strategy. In this work each player independently uses
+     the Q-learning algorithm (4).&nbsp; Their goal is to maximize the
+     long-term average reward per action.&nbsp; A simplified explanation of the
+     Q-learning algorithm follows:</li>
+ <ul style='margin-top:0in' type=circle>
+  <li class=MsoNormal style='mso-list:l2 level2 lfo9;tab-stops:list 1.0in'>Given
+      a set of available actions, <i>Actions</i>= {<i>Act<sub>1</sub>= process,
+      Act<sub>2</sub>=ignore</i>}), a Q-learning agent selects its action
+      according to the probabilities P(Act<sub>1</sub>), P(Act<sub>2</sub>)=1-
+      P(Act<sub>1</sub>).</li>
+  <li class=MsoNormal style='mso-list:l2 level2 lfo9;tab-stops:list 1.0in'>After
+      the game is finished (i.e. all agents performed their actions), players
+      receive their reward or penalty (payoff), according to the outcome of
+      their actions. (obviously the payoff they receive depends on the actions
+      of all other agents too).</li>
+  <li class=MsoNormal style='mso-list:l2 level2 lfo9;tab-stops:list 1.0in'>Agents
+      take note of the action and the resulting payoff: For each action they
+      keep a Q value: Q(Act<sub>1</sub>), Q(Act<sub>2</sub>). Q(Act<sub>i</sub>)
+      represents the average payoff agents have received so far by performing
+      action i.</li>
+  <li class=MsoNormal style='mso-list:l2 level2 lfo9;tab-stops:list 1.0in'>Using
+      the updated Q’s after each step, agents update their action probabilities
+      P(Act<sub>1</sub>) and P(Act<sub>2</sub>) employing the Boltzmann
+      distribution (Eq 2).</li>
+ </ul>
+</ul>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<p class=MsoNormal><b>Mappings to the liver: </b></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l13 level1 lfo10;tab-stops:list .5in'>Players
+     1,…,n: xenobiotic eliminating subsystems along the liver lobule. Players
+     1,…,n/2 represent the ones closer to the portal zone. Players n/2+1,…,n
+     represent the ones closer to the central zone of the liver. One player
+     does not necessarily map to one hepatocyte.</li>
+ <li class=MsoNormal style='mso-list:l13 level1 lfo10;tab-stops:list .5in'>P<sub>i</sub>:
+     Clearance Strategy of player i -- the probability that the xenobiotic
+     eliminating subsystem i eliminate an encountered compound. In other words,
+     all complex stochastic events that eventually result in elimination of a
+     compound by the subsystem. The events include: binding to transporters,
+     membrane proteins, or enzymes, metabolism, excretion to bile, etc.</li>
+ <li class=MsoNormal style='mso-list:l13 level1 lfo10;tab-stops:list .5in'>L<sub>i</sub>:
+     Percentage of incoming compounds that cannot be seen by subsystem i due to
+     physical constraints outside cells control. Examples include: remaining
+     out of hepatocytes’ reach by staying inside the sinusoidal vessels due to
+     saturated or damaged transporters, etc.&nbsp; </li>
+ <li class=MsoNormal style='mso-list:l13 level1 lfo10;tab-stops:list .5in'>Q-learning
+     algorithm: hypothesized learning/adapting capabilities of hepatocytes.</li>
+ <ul style='margin-top:0in' type=circle>
+  <li class=MsoNormal style='mso-list:l13 level2 lfo10;tab-stops:list 1.0in'>Q’s:
+      collection of proteins, endogenous compounds, motifs or pathways that can
+      adapt according to signals received by cells. Collectively they may be
+      called memory of the cell, which might include genetically conserved
+      information.</li>
+  <li class=MsoNormal style='mso-list:l13 level2 lfo10;tab-stops:list 1.0in'>Translation
+      of P’s from Q’s: collection of motifs or signaling pathways which can
+      affect the enzyme/transporter expression (and consequently the rate of
+      elimination) according to the cell’s memory of the past.</li>
+ </ul>
+</ul>
+
+<div style='border:none;border-bottom:double windowtext 4.5pt;padding:0in 0in 1.0pt 0in'>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt'>II. Results</span></b></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b>A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</b></p>
+
+<p class=MsoNormal><img width=446 height=408 id="_x0000_i1033"
+src="zonation_images/image009.gif"><img
+width=447 height=410 id="_x0000_i1034"
+src="zonation_images/image010.gif"></p>
+
+<p class=MsoNormal>C</p>
+
+<p class=MsoNormal><img width=437 height=402 id="_x0000_i1035"
+src="zonation_images/image011.gif"><img
+width=79 height=357 id="_x0000_i1036"
+src="zonation_images/image012.gif"></p>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<p class=MsoNormal><b>Figure 4</b>.&nbsp; Effects of toxicity change in the
+2-player game. </p>
+
+<p class=MsoNormal><b>Legend: </b></p>
+
+<p class=MsoNormal>Surface with solid marker lines: cost surface of player 1</p>
+
+<p class=MsoNormal>Surface with dashed marker lines: cost surface of player 2</p>
+
+<p class=MsoNormal>Lighter green corresponds to lower costs; purple corresponds
+to higher costs, as shown by the color-bar.</p>
+
+<p class=MsoNormal>Arrows on the surfaces: players’ preferred moving direction in
+order to lower their costs</p>
+
+<p class=MsoNormal>Star: the equilibrium of the corresponding game </p>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<p class=MsoNormal><b>Description:</b></p>
+
+<p class=MsoNormal>Players’ cost functions and accordingly the equilibrium of
+the game are highly influenced by the toxicity level. Three examples of cost
+functions are shown.&nbsp; The equilibrium of each game is shown by a small
+white star. The arrows are the directions towards which players are inclined to
+move in their strategy space to reduce costs. The direction of arrows
+eventually takes them to the equilibrium from any given point in the strategy
+space. </p>
+
+<p class=MsoNormal>(A) When <span style='text-transform:uppercase'>toxicity</span>
+is low (0.5), the equilibrium of the game is at (p1=0, p2=0). The cost surface
+of player 1 is steeper than that of player 2. As a result, player 2’s
+contribution is less costly. </p>
+
+<p class=MsoNormal>(B) When <span style='text-transform:uppercase'>toxicity</span>
+is higher than the energy cost (1.2 &gt; 1), the equilibrium of the game moves
+to (p1=0, p2=1), which means player 1 makes none while player 2 makes maximum
+clearance effort.</p>
+
+<p class=MsoNormal>(C) Another change of equilibrium happens when <span
+style='text-transform:uppercase'>toxicity</span> is high enough (in this
+particular example, at least %64 higher than energy cost). In this case, both
+players make maximum effort to clear the toxins (p1=1, p2=1). Calculations of
+cost surfaces are presented in Appendix B.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:none;border-bottom:solid windowtext 3.0pt;padding:0in 0in 1.0pt 0in'>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+<p class=MsoNormal><img width=964 height=396 id="_x0000_i1037"
+src="zonation_images/image013.gif"></p>
+
+<p class=MsoNormal><b>Figure 5. &nbsp;</b>Effects of toxicity change in the
+physiologically-based model.</p>
+
+<p class=MsoNormal><b>Legend: A: </b></p>
+
+<p class=MsoNormal>3D surface: plot of cost function, J, versus CL1 and CL2,
+when c=0.1. (CL1, Cl2, c and J are defined in Figure 2 legend). The units of
+the two intrinsic clearances are mL/h.</p>
+
+<p class=MsoNormal>2D curves: contours of the cost function. Blue colors
+correspond to lower costs. Red colors correspond to higher costs. </p>
+
+<p class=MsoNormal><b>B: </b></p>
+
+<p class=MsoNormal>Dotted curve: trajectory of J<sub>min</sub> as c changes
+from 0.05 to 0.5. For each point on the trajectory the value of corresponding c
+is reported.</p>
+
+<p class=MsoNormal>Solid line: the unity line</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b>Description:</b></p>
+
+<p class=MsoNormal>(A): Typical surface of the cost function (J) versus
+intrinsic periportal clearance (CL<sub>1</sub>) and intrinsic perivenous
+clearance (CL<sub>2</sub>) when c=0.1. If CL<sub>1</sub> and CL<sub>2</sub> are
+both small, the energy cost is low; but the toxicity cost is high since the
+compound is not cleared fast enough. On the other hand, high values of CL<sub>1</sub>
+and CL<sub>2</sub> reduce toxicity cost but increase energy consumption.
+&nbsp;Consequently, for a given c, there exists an optimal pair of CL<sub>1</sub>
+and CL<sub>2</sub> at which J is at its minimum (J<sub>min</sub>). </p>
+
+<p class=MsoNormal>(B): The trajectory of optimal J (J<sub>min</sub>) as c
+(toxicity) increases. The values of c are shown on the trajectory. The solid
+line is the unity line. Note that the trajectory is above the unity line which
+means CL<sub>2,optimal</sub>&gt;=CL<sub>1,optimal</sub>. It demonstrates that
+in order to minimize the exposure of toxic compounds to the body, it’s less
+expensive if zone 2 makes more clearance effort than zone 1. </p>
+
+<div style='border:none;border-bottom:solid windowtext 3.0pt;padding:0in 0in 1.0pt 0in'>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=601
+ style='width:450.6pt;margin-left:-.15pt;border-collapse:collapse;mso-padding-alt:
+ 0in 0in 0in 0in'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;page-break-inside:avoid;
+  height:81.0pt'>
+  <td width=86 style='width:64.5pt;padding:0in 5.4pt 0in 5.4pt;height:81.0pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:5.65pt;
+  margin-bottom:0in;margin-left:5.65pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:7.0pt;font-family:Arial'>Clearance effort</span></p>
+  </td>
+  <td width=258 rowspan=2 style='width:193.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:81.0pt'>
+  <p class=MsoNormal>A--<span style='font-size:9.0pt;font-family:Arial;
+  text-transform:uppercase'> Toxicity</span><span style='font-size:9.0pt;
+  font-family:Arial'>=1.0</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><img width=238
+  height=197 id="_x0000_i1038"
+  src="zonation_images/image014.jpg"></p>
+  </td>
+  <td width=256 rowspan=2 valign=top style='width:192.3pt;border:none;
+  border-bottom:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:81.0pt'>
+  <p class=MsoNormal>B -- --<span style='font-size:9.0pt;font-family:Arial;
+  text-transform:uppercase'> Toxicity</span><span style='font-size:9.0pt;
+  font-family:Arial'>=2.0</span></p>
+  <p class=MsoNormal><img width=237 height=197 id="_x0000_i1039"
+  src="zonation_images/image015.jpg"></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;page-break-inside:avoid;height:91.3pt'>
+  <td width=86 style='width:64.5pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:91.3pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:5.65pt;
+  margin-bottom:0in;margin-left:5.65pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:7.0pt;font-family:Arial'>Toxicity Processed</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2;page-break-inside:avoid;height:78.95pt'>
+  <td width=86 style='width:64.5pt;padding:0in 5.4pt 0in 5.4pt;height:78.95pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:5.65pt;
+  margin-bottom:0in;margin-left:5.65pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:7.0pt;font-family:Arial'>Clearance effort</span></p>
+  </td>
+  <td width=258 rowspan=2 style='width:193.8pt;border:none;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:78.95pt'>
+  <p class=MsoNormal>C --<span style='font-size:9.0pt;font-family:Arial;
+  text-transform:uppercase'> Toxicity</span><span style='font-size:9.0pt;
+  font-family:Arial'>=3.0</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><img width=244
+  height=197 id="_x0000_i1040"
+  src="zonation_images/image016.jpg"></p>
+  <p class=MsoNormal><span style='font-size:8.0pt'>upstream&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  downstream</span></p>
+  </td>
+  <td width=256 rowspan=2 valign=top style='width:192.3pt;padding:0in 5.4pt 0in 5.4pt;
+  height:78.95pt'>
+  <p class=MsoNormal>D -- <span style='font-size:9.0pt;font-family:Arial;
+  text-transform:uppercase'>Toxicity</span><span style='font-size:9.0pt;
+  font-family:Arial'>=5.0</span></p>
+  <p class=MsoNormal><img width=242 height=197 id="_x0000_i1041"
+  src="zonation_images/image017.jpg"></p>
+  <p class=MsoNormal><span style='font-size:8.0pt'>upstream&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  downstream</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3;page-break-inside:avoid;height:81.7pt'>
+  <td width=86 style='width:64.5pt;padding:0in 5.4pt 0in 5.4pt;height:81.7pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:5.65pt;
+  margin-bottom:0in;margin-left:5.65pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:7.0pt;font-family:Arial'>Toxicity Processed</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4;mso-yfti-lastrow:yes;height:8.8pt'>
+  <td width=86 valign=top style='width:64.5pt;padding:0in 5.4pt 0in 5.4pt;
+  height:8.8pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:8.0pt;font-family:Arial'>&nbsp;</span></p>
+  </td>
+  <td width=258 style='width:193.8pt;border:none;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:8.8pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:8.0pt;font-family:Arial'>Distance to <span style='text-transform:
+  uppercase'>periportal</span> region</span></p>
+  </td>
+  <td width=256 style='width:192.3pt;padding:0in 5.4pt 0in 5.4pt;height:8.8pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:8.0pt;font-family:Arial'>&nbsp;&nbsp;&nbsp;&nbsp; Distance
+  to <span style='text-transform:uppercase'>periportal</span> region</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b>Figure 6.&nbsp; </b>Effects of toxicity change in the
+n-player game. </p>
+
+<p class=MsoNormal><b>Legend</b>: </p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l6 level1 lfo11;tab-stops:list .5in'>i<sup>th</sup>
+     blue bar: average (n=1000) clearance strategy (also referred to as
+     clearance effort) of the i<sup>th</sup> player (after 10,000 steps)</li>
+ <li class=MsoNormal style='mso-list:l6 level1 lfo11;tab-stops:list .5in'>i<sup>th</sup>
+     red bar: total toxicity amount processed by the i<sup>th </sup>player
+     (after 10,000 steps)</li>
+</ul>
+
+<p class=MsoNormal><b>Description:</b></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l7 level1 lfo12;tab-stops:list .5in'>Emerged
+     in silico collective clearance strategies of the n-player game for
+     different <span style='text-transform:uppercase'>toxicity </span>values
+     are shown. Each graph depicts the strategies of 20 agents playing the
+     expanded n-player game after 10,000 steps. &nbsp;Also the <i>total
+     toxicity amounts</i> each player has processed are shown (red bars).
+     &nbsp;Using Q-learning algorithm, each agent independently learned its own
+     strategy to minimize its energy and toxicity costs. The converged
+     collective strategies are such that agents in the upstream (<span
+     style='text-transform:uppercase'>periportal</span>) region don’t make as
+     much clearance effort as agents in downstream region unless the compound
+     is highly toxic. </li>
+</ul>
+
+<p class=MsoNormal style='margin-left:.25in'>&nbsp;</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l4 level1 lfo13;tab-stops:list .5in'>The
+     distribution of <i>Total toxicity processed amounts</i> (red bars) differs
+     from that of clearance efforts. At low toxicity levels (A), downstream
+     players process more compounds than what upstream players do. And, at high
+     toxicity values (C and D), upstream players process more compounds,
+     although their clearance effort is less or equal to downstream players. At
+     some moderate toxicity levels, however, players in the middle process the
+     most although they don’t make as mush clearance effort as the downstream
+     players (B). As a result: downstream, middle and upstream players are more
+     susceptible to low, medium and high toxicity levels, respectively. (This
+     observation cannot be made in a 2-zoned model.)</li>
+</ul>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<div style='border:none;border-bottom:solid windowtext 3.0pt;padding:0in 0in 1.0pt 0in'>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><img width=455 height=453 id="_x0000_i1042"
+src="zonation_images/image018.gif"></p>
+
+<p class=MsoNormal><b>Figure 7A.</b> 2D expansion of the n-player game. Players
+are organized in a circular 2D shape similar to a liver lobule. At each step of
+the game, particles are placed in the portal area (shown in pink). They
+stochastically and simultaneously move towards the central region according the
+flow shown. Each agent on the grid plays one of the two actions (ignore or
+process) upon encountering a particle (similar to the game shown in Figure 3).
+Agents use Q-learning algorithm to minimize their long-term average cost.
+Particles that reach the exit area (light blue area) are removed. All players
+are penalized for exited particles according to their assigned toxicity.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=843
+ style='width:632.4pt;margin-left:25.1pt;border-collapse:collapse;mso-padding-alt:
+ 0in 0in 0in 0in'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=282 valign=top style='width:211.8pt;border:solid windowtext 1.0pt;
+  border-bottom:double windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><b>toxicity
+  :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  25</b></p>
+  </td>
+  <td width=282 valign=top style='width:211.8pt;border-top:solid windowtext 1.0pt;
+  border-left:none;border-bottom:double windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b>10</b></p>
+  </td>
+  <td width=278 valign=top style='width:2.9in;border-top:solid windowtext 1.0pt;
+  border-left:none;border-bottom:double windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b>5</b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=282 valign=top style='width:211.8pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><img width=268 height=137 id="_x0000_i1043"
+  src="zonation_images/image019.jpg"></p>
+  </td>
+  <td width=282 valign=top style='width:211.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><img width=268 height=137 id="_x0000_i1044"
+  src="zonation_images/image019.jpg"></p>
+  </td>
+  <td width=278 valign=top style='width:2.9in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><img width=262 height=136 id="_x0000_i1045"
+  src="zonation_images/image020.jpg"></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=282 valign=top style='width:211.8pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><img width=268 height=137 id="_x0000_i1046"
+  src="zonation_images/image021.gif"></p>
+  </td>
+  <td width=282 valign=top style='width:211.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><img width=264 height=139 id="_x0000_i1047"
+  src="zonation_images/image022.gif"></p>
+  </td>
+  <td width=278 valign=top style='width:2.9in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><img width=262 height=136 id="_x0000_i1048"
+  src="zonation_images/image023.jpg"></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width=282 valign=top style='width:211.8pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><img width=268 height=137 id="_x0000_i1049"
+  src="zonation_images/image024.gif"></p>
+  </td>
+  <td width=282 valign=top style='width:211.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><img width=264 height=139 id="_x0000_i1050"
+  src="zonation_images/image025.gif"></p>
+  </td>
+  <td width=278 valign=top style='width:2.9in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><img width=262 height=136 id="_x0000_i1051"
+  src="zonation_images/image026.jpg"></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td width=282 valign=top style='width:211.8pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><img width=268 height=137 id="_x0000_i1052"
+  src="zonation_images/image027.gif"></p>
+  </td>
+  <td width=282 valign=top style='width:211.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><img width=264 height=139 id="_x0000_i1053"
+  src="zonation_images/image028.gif"></p>
+  </td>
+  <td width=278 valign=top style='width:2.9in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><img width=258 height=135 id="_x0000_i1054"
+  src="zonation_images/image029.jpg"></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5;height:6.6pt'>
+  <td width=282 valign=top style='width:211.8pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:6.6pt'>
+  <p class=MsoNormal><img width=268 height=137 id="_x0000_i1055"
+  src="zonation_images/image030.gif"></p>
+  </td>
+  <td width=282 valign=top style='width:211.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:6.6pt'>
+  <p class=MsoNormal><img width=264 height=139 id="_x0000_i1056"
+  src="zonation_images/image031.gif"></p>
+  </td>
+  <td width=278 valign=top style='width:2.9in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:6.6pt'>
+  <p class=MsoNormal><img width=261 height=135 id="_x0000_i1057"
+  src="zonation_images/image032.jpg"></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6;mso-yfti-lastrow:yes;height:7.3pt'>
+  <td width=282 valign=top style='width:211.8pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:7.3pt'>
+  <p class=MsoNormal><img width=268 height=137 id="_x0000_i1058"
+  src="zonation_images/image033.gif"></p>
+  </td>
+  <td width=282 valign=top style='width:211.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.3pt'>
+  <p class=MsoNormal><img width=264 height=139 id="_x0000_i1059"
+  src="zonation_images/image034.gif"></p>
+  </td>
+  <td width=278 valign=top style='width:2.9in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.3pt'>
+  <p class=MsoNormal><img width=261 height=135 id="_x0000_i1060"
+  src="zonation_images/image035.jpg"></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><b>Figure 7B.&nbsp; </b>Effects of toxicity change on 2D
+gradients of clearance strategies (P’s). </p>
+
+<p class=MsoNormal><b>Legend</b>: </p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l9 level1 lfo14;tab-stops:list .5in'>Each
+     point on the graphs shows the average (n=500) clearance strategy of the agent
+     located on that point. </li>
+ <li class=MsoNormal style='mso-list:l9 level1 lfo14;tab-stops:list .5in'>Color
+     mapping to clearance effort: <img width=180 height=33 id="_x0000_i1061"
+     src="zonation_images/image036.jpg"></li>
+ <li class=MsoNormal style='mso-list:l9 level1 lfo14;tab-stops:list .5in'>The
+     evolution of zonation is shown and compared for 3 different toxicity
+     levels: 25 (left column), 10 (middle column) and 5 (right column).</li>
+ <li class=MsoNormal style='mso-list:l9 level1 lfo14;tab-stops:list .5in'>Players
+     were pre-exposed to toxicity level of 50 for 500 steps then 500 steps of
+     zero toxicity.</li>
+</ul>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b>Description:</b></p>
+
+<p class=MsoNormal>Figure compares the emergence of 2D distribution of
+clearance strategies for the 3 different toxicity levels. In all three
+conditions, downstream agents make more clearance effort than upstream agents.
+Upstream agents make more contribution for higher toxicity levels. Other
+important parameters are as follows: L=0.8, T=0.01, dose=100, space_size=31x31.
+</p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><b>Video 1</b>. Shows how the players respond and
+self-organize their strategies when toxicity is changed. <o:p></o:p></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'><object width="638" height="525"> <param name="movie" value="http://www.youtube.com/v/FFWCIQivpNk"> </param> <embed src="http://www.youtube.com/v/FFWCIQivpNk" type="application/x-shockwave-flash" width="638" height="525"> </embed> </object>&nbsp;</span></p>
+
+
+<p class=MsoNormal><b>Video 2</b>. Shows how the players respond and
+self-organize their strategies when other agents die due to toxicity. Green bars show the amount of toxicity processed by the corresponding agent. Black solid curve shows the average strategies of the agents (+/- standard deviation). (A) Toxicity level is low: downstream players die first. Upstream players increase their clearance effort to compensate. (B) Toxicity level is moderate: mid-zonal players die first. (C) Toxicity level is high: upstream players die first. <o:p></o:p></p>
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=843
+ style='width:632.4pt;margin-left:25.1pt;border-collapse:collapse;mso-padding-alt:
+ 0in 0in 0in 0in'>
+ <tr>
+	 <td> <p><b>A</b></p>
+<object width="425" height="350"> <param name="movie" value="http://www.youtube.com/v/PixOt-gWifg"> </param> <embed src="http://www.youtube.com/v/PixOt-gWifg" type="application/x-shockwave-flash" width="425" height="350"> </embed> </object>
+</td>
+<td>
+<p><b>B</b></p>
+<object width="425" height="350"> <param name="movie" value="http://www.youtube.com/v/kj3wXRdAKKE"> </param> <embed src="http://www.youtube.com/v/kj3wXRdAKKE" type="application/x-shockwave-flash" width="425" height="350"> </embed> </object>
+</td>
+<td>
+<p><b>C</b></p>
+<object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/pudL9BreUXM&hl=en&fs=1"></param><param name="allowFullScreen" value="true"></param><embed src="http://www.youtube.com/v/pudL9BreUXM&hl=en&fs=1" type="application/x-shockwave-flash" allowfullscreen="true" width="425" height="344"></embed></object>
+</td>
+</tr>
+</table>
+
+<div style='border:none;border-bottom:double windowtext 4.5pt;padding:0in 0in 1.0pt 0in'>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+</div>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt'>III. Validation</span></b></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><b>Table 2.</b> LD50 and zone activity of toxic compounds
+found in the literature. pp: periportal,&nbsp; pv: perivenous The table
+summarizes the LD50 and zone activity of compounds found in the literature. We
+intended to report all such data found in the literature, however LD50 values
+are not available for all compounds, due to ethical implications of measuring
+LD50. Although the zone activity data are from different papers and may not be
+directly comparable, they provide initial support for our hypothesized model:
+highly toxic compounds affect periportal region, while low toxic compounds
+affect perivenous region, and compounds with medium toxicity affect middle
+regions of the liver. It is consistent with the model presented in this work
+(see figures 6 and 7).</p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;mso-padding-alt:0in 0in 0in 0in'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td style='border-top:solid windowtext 1.0pt;border-left:none;border-bottom:
+  double windowtext 1.5pt;border-right:none;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b>Chemical Name</b> </p>
+  </td>
+  <td width=101 style='width:76.1pt;border-top:solid windowtext 1.0pt;
+  border-left:none;border-bottom:double windowtext 1.5pt;border-right:none;
+  padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b>LD50 Rat</b></p>
+  <p class=MsoNormal align=center style='text-align:center'><b>Oral (mg/kg)</b>
+  <span style='color:#3366FF'>{{</span>23 Anonymous 2008<span style='color:
+  #3366FF'>}}</span></p>
+  </td>
+  <td width=69 style='width:51.65pt;border-top:solid windowtext 1.0pt;
+  border-left:none;border-bottom:double windowtext 1.5pt;border-right:none;
+  padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b>Zone</b></p>
+  <p class=MsoNormal align=center style='text-align:center'><b>Avtivity</b></p>
+  </td>
+  <td width=412 valign=top style='width:308.75pt;border-top:solid windowtext 1.0pt;
+  border-left:none;border-bottom:double windowtext 1.5pt;border-right:none;
+  padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b>Reference</b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td style='border:none;border-bottom:solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>DIOXIN (TCDD)</p>
+  </td>
+  <td width=101 style='width:76.1pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'>0.034</p>
+  </td>
+  <td width=69 style='width:51.65pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'>pp</p>
+  </td>
+  <td width=412 valign=top style='width:308.75pt;border:none;border-bottom:
+  solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='color:#3366FF'>{{</span>22 Birnbaum,L S. 1999<span
+  style='color:#3366FF'>}}</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td style='border:none;border-bottom:solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>CYCLOCHLOROTINE </p>
+  </td>
+  <td width=101 style='width:76.1pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'>2-3</p>
+  </td>
+  <td width=69 style='width:51.65pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'>pp</p>
+  </td>
+  <td width=412 valign=top style='width:308.75pt;border:none;border-bottom:
+  solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-autospace:none'>“Animals treated with CC developed
+  degeneration and necrosis of the hepatocytes almost exclusively in the <b>periportal</b>
+  region of the liver lobule.” <span style='color:#3366FF'>{{</span>24
+  Tatsuno,T. 1984<span style='color:#3366FF'>}}</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3;height:11.9pt'>
+  <td style='border:none;border-bottom:solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt;
+  height:11.9pt'>
+  <p class=MsoNormal>PHOSPHORUS</p>
+  </td>
+  <td width=101 style='width:76.1pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:.75pt .75pt .75pt .75pt;height:11.9pt'>
+  <p class=MsoNormal align=center style='text-align:center'>3.03(f), 3.76(m)</p>
+  </td>
+  <td width=69 style='width:51.65pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:.75pt .75pt .75pt .75pt;height:11.9pt'>
+  <p class=MsoNormal align=center style='text-align:center'>pp</p>
+  </td>
+  <td width=412 style='width:308.75pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:.75pt .75pt .75pt .75pt;height:11.9pt'>
+  <p class=MsoNormal style='text-autospace:none'>“…phosphorus damage <b>periportal</b></p>
+  <p class=MsoNormal>tissue.” <span style='color:#3366FF'>{{</span>33 Thurman,R
+  G. 1984<span style='color:#3366FF'>}}</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4;height:37.0pt'>
+  <td style='border:none;border-bottom:solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt;
+  height:37.0pt'>
+  <p class=MsoNormal>Gossypol</p>
+  </td>
+  <td width=101 style='width:76.1pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:.75pt .75pt .75pt .75pt;height:37.0pt'>
+  <p class=MsoNormal align=center style='text-align:center'>5</p>
+  </td>
+  <td width=69 style='width:51.65pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:.75pt .75pt .75pt .75pt;height:37.0pt'>
+  <p class=MsoNormal align=center style='text-align:center'>pp</p>
+  </td>
+  <td width=412 valign=top style='width:308.75pt;border:none;border-bottom:
+  solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt;height:37.0pt'>
+  <p class=MsoNormal>“Gossypol selectively damages the <b>periportal</b> region
+  of lobules in perfused rat liver” <span style='color:#3366FF'>{{</span>25
+  Lin,Y C. 1991<span style='color:#3366FF'>}}</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td style='border:none;border-bottom:solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Tacrine </p>
+  </td>
+  <td width=101 style='width:76.1pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'>23-28 (mice)</p>
+  </td>
+  <td width=69 style='width:51.65pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'>pv &amp; </p>
+  <p class=MsoNormal align=center style='text-align:center'>mid-zonal</p>
+  </td>
+  <td width=412 valign=top style='width:308.75pt;border:none;border-bottom:
+  solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>“necrosis was detected in <b>midzonal</b> and <b>pericentral</b>
+  regions of the liver lobule accompanied by fatty changes.” <span
+  style='color:#3366FF'>{{</span>26 Thurman,R G. 1997<span style='color:#3366FF'>}}</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td style='border:none;border-bottom:solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>METHYLHYDRAZINE </p>
+  </td>
+  <td width=101 style='width:76.1pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'>33</p>
+  </td>
+  <td width=69 style='width:51.65pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'>pp</p>
+  </td>
+  <td width=412 valign=top style='width:308.75pt;border:none;border-bottom:
+  solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>“Hepatic and renal lesions consisted of <b>periportal</b>
+  intracanalicular cholestasis but no hepatic and renal tubular hemosiderosis.”
+  <span style='color:#3366FF'>{{</span>23 Anonymous 2008<span style='color:
+  #3366FF'>}}</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7'>
+  <td style='border:none;border-bottom:solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>ALLYL ALCOHOL </p>
+  </td>
+  <td width=101 style='width:76.1pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'>64</p>
+  </td>
+  <td width=69 style='width:51.65pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'>pp</p>
+  </td>
+  <td width=412 valign=top style='width:308.75pt;border:none;border-bottom:
+  solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='color:#3366FF'>{{</span>21 Katz,N. 1989<span
+  style='color:#3366FF'>}}</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8'>
+  <td style='border:none;border-bottom:solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>COUMARIN </p>
+  </td>
+  <td width=101 style='width:76.1pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'>293</p>
+  </td>
+  <td width=69 style='width:51.65pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'>mid-zonal</p>
+  <p class=MsoNormal align=center style='text-align:center'>&amp; pp</p>
+  </td>
+  <td width=412 valign=top style='width:308.75pt;border:none;border-bottom:
+  solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>“In rats pretreated with saline, corn oil or PB, coumarin
+  produced <b>centrilobular</b> hepatic necrosis, whereas in rats pretreated
+  with 20 MC or AR0, coumarin produced <b>periportal</b> hepatic necrosis”<span
+  style='color:#3366FF'>{{</span>29 Evans,J G. 1993<span style='color:#3366FF'>}}</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:9'>
+  <td style='border:none;border-bottom:solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>FERROUS SULFATE </p>
+  </td>
+  <td width=101 style='width:76.1pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'>319</p>
+  </td>
+  <td width=69 style='width:51.65pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'>pp</p>
+  </td>
+  <td width=412 valign=top style='width:308.75pt;border:none;border-bottom:
+  solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>“Acute Exposure/ Experiments .../have/ shown that large
+  doses of ferrous sulfate produce severe liver damage ...At post mortem in
+  naturally occurring cases only organ consistently affected is liver,
+  characteristic finding being <b>periportal</b> necrosis” <span
+  style='color:#3366FF'>{{</span>23 Anonymous 2008<span style='color:#3366FF'>}}</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:10'>
+  <td style='border:none;border-bottom:solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>MIREX </p>
+  </td>
+  <td width=101 style='width:76.1pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'>306</p>
+  </td>
+  <td width=69 style='width:51.65pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'>pp</p>
+  </td>
+  <td width=412 valign=top style='width:308.75pt;border:none;border-bottom:
+  solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>“Lipid accumulations occurred &amp; appeared in
+  distinctive <b>periportal</b> zonation pattern” <span style='color:#3366FF'>{{</span>27
+  <st1:place w:st="on">Kendall</st1:place>,M W. 1979<span style='color:#3366FF'>}}</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:11'>
+  <td style='border:none;border-bottom:solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>ISONIAZID </p>
+  </td>
+  <td width=101 style='width:76.1pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'>650</p>
+  </td>
+  <td width=69 style='width:51.65pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'>pv</p>
+  </td>
+  <td width=412 valign=top style='width:308.75pt;border:none;border-bottom:
+  solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>“the extent of cell death was higher in <b>perivenous</b>
+  cells than in periportal cells” <span style='color:#3366FF'>{{</span>28
+  Lindros,K O. 1992<span style='color:#3366FF'>}}</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:12'>
+  <td style='border:none;border-bottom:solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>1,1-DICHLOROETHYLENE </p>
+  </td>
+  <td width=101 style='width:76.1pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'>850</p>
+  </td>
+  <td width=69 style='width:51.65pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'>pp</p>
+  </td>
+  <td width=412 valign=top style='width:308.75pt;border:none;border-bottom:
+  solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>“Statistically significant treatment related differences
+  were limited to the liver in which an increase in hepatic lesions was
+  observed ... which usually had a minimal amount of hepatocellular fatty
+  change and <b>periportal</b> hepatocellular hypertrophy” <span
+  style='color:#3366FF'>{{</span>23 Anonymous 2008<span style='color:#3366FF'>}}</span>
+  </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:13'>
+  <td style='border:none;border-bottom:solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>ACETAMINOPHEN </p>
+  </td>
+  <td width=101 style='width:76.1pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'>1000</p>
+  </td>
+  <td width=69 style='width:51.65pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'>pv</p>
+  </td>
+  <td width=412 valign=top style='width:308.75pt;border:none;border-bottom:
+  solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>“…histologic examination of liver tissues 24 hours after
+  treatment with 120 mg/kg APAP showed areas of <b>perivenous</b> hemorrhage
+  and necrosis in APAPtreated IL-10 KO mice” <span style='color:#3366FF'>{{</span>30
+  Pohl,Lance R. 2002<span style='color:#3366FF'>}}</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:14'>
+  <td style='border:none;border-bottom:solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>DIALLYL PHTHALATE </p>
+  </td>
+  <td width=101 style='width:76.1pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'>1700</p>
+  </td>
+  <td width=69 style='width:51.65pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'>pp</p>
+  </td>
+  <td width=412 valign=top style='width:308.75pt;border:none;border-bottom:
+  solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>“…diallyl phthalate is metabolized to allyl alcohol, a
+  potent <b>periportal</b> hepatotoxicant…” <span style='color:#3366FF'>{{</span>31
+  Sipes,I G. 1986<span style='color:#3366FF'>}}</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:15'>
+  <td style='border:none;border-bottom:solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>CCl4 </p>
+  </td>
+  <td width=101 style='width:76.1pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'>2860</p>
+  </td>
+  <td width=69 style='width:51.65pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'>pv</p>
+  </td>
+  <td width=412 valign=top style='width:308.75pt;border:none;border-bottom:
+  solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='color:#3366FF'>{{</span>21 Katz,N. 1989<span
+  style='color:#3366FF'>}}</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:16;mso-yfti-lastrow:yes'>
+  <td style='border:none;border-bottom:solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Most drugs </p>
+  </td>
+  <td width=101 style='width:76.1pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'>&gt;5000</p>
+  </td>
+  <td width=69 style='width:51.65pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'>pv</p>
+  </td>
+  <td width=412 valign=top style='width:308.75pt;border:none;border-bottom:
+  solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:10.0pt'>&nbsp;</span></p>
+
+<div style='border:none;border-bottom:solid windowtext 3.0pt;padding:0in 0in 1.0pt 0in'>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+</div>
+
+<p class=MsoNormal> (image removed due to copyright restrictions)</p><p><img width=382 height=384 id="_x0000_i1062"
+src="zonation_images/image037.gif"></p>
+
+<p class=MsoNormal><b>Figure 8. </b>In vivo<b> </b>effects of toxicity change
+on perfused rat liver, example 1. </p>
+
+<p class=MsoNormal>The figure shows the dose-dependent zonal distribution of
+Cysteine uptake in a perfused rat liver. &nbsp;X axis is the percent distance
+to periportal region. Y axis is percent peak radioactivity measured from
+autographs taken 30s after administration of tracer [<sup>35</sup>S]Cysteine in
+a perfused rat liver (6). &nbsp;As concentration of Cysteine increases, it
+becomes more toxic (LD50=1890mg/kg), and as a result the clearance strategies
+of hepatocytes change: The hepatocytes close to the periportal region do not
+make as much clearance effort as those closer to the perivenous region, unless
+there is a high toxicity threat. This behavior is consistent with the behavior
+of agents in the proposed game trying to simultaneously minimize their energy
+and toxicity costs (thus improving their own fitness as well as the whole
+organism fitness). The data is taken from <span style='color:#3366FF'>{{</span>11
+Kaplowitz,N. 1992<span style='color:#3366FF'>}}</span>.</p>
+
+<div style='border:none;border-bottom:solid windowtext 3.0pt;padding:0in 0in 1.0pt 0in'>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+<p class=MsoNormal><img width=468 height=386 id="_x0000_i1063"
+src="zonation_images/image038.gif"></p>
+
+<p class=MsoNormal><b>Figure 9.&nbsp; </b>In vivo<b> </b>effects of toxicity
+change on rat liver, example 2. </p>
+
+<p class=MsoNormal>Dose dependent localization of TCDD (LD50=0.034 mg/kg) and
+effect of CYP1A2 mRNA expression in perivenous and periportal hepatocytes
+obtained from rats treated with 0.01, 0.3 and 10.0 ug TCDD/kg.&nbsp; X-axis is
+the concentration of [<sup>3</sup>H]TCDD in each liver-cell population
+expresses as attograms (ag) [<sup>3</sup>H]TCDD/viable hepatocyte. </p>
+
+<p class=MsoNormal>The data is consistent with the model: at low toxicity
+values perivenous hepatocytes express more CYP1A2 than periportal hepatocytes.
+As toxicity increases both perivenous and periportal CYP1A2 expression
+increases. At the highest toxicity value (0.3LD50) periportal and perivenous hepatocytes
+express almost equal amounts of CYP1A2. Data from <span style='color:#3366FF'>{{</span>22
+Birnbaum,L S. 1999<span style='color:#3366FF'>}}</span><span style='font-size:
+10.0pt'>.</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:none;border-bottom:double windowtext 4.5pt;padding:0in 0in 1.0pt 0in'>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt'>References</span></b></p>
+
+<div style='border:none;border-bottom:double windowtext 4.5pt;padding:0in 0in 1.0pt 0in'>
+
+<p class=MsoNormal>1. Billiar,T R.; Vodovotz,Y.; Geller,D A.; Salyapongse,A N.;
+Liu,S.Hepatocyte toll-like receptor 2 expression in vivo and in vitro: role of
+cytokines in induction of rat TLR2 gene expression by lipopolysaccharide.Shock,
+2000, 14, 3, 361-5, BioMedical Press, Augusta, Ga.</p>
+
+<p class=MsoNormal>2. Matzinger,The Danger Model: A Renewed Sense of
+SelfScience, 2002, 296, 5566, 301, American Association for the Advancement of
+Scienc</p>
+
+<p class=MsoNormal>3. Lucier,G W.; Clark,G C.; McCoy,Z.; Portier,C J.;
+Goldstein,J A.; Tritscher,A M.Dose-response relationships for chronic exposure
+to 2,3,7,8-tetrachlorodibenzo-p-dioxin in a rat tumor promotion model:
+quantification and immunolocalization of CYP1A1 and CYP1A2 in the liver.Cancer
+research, 1992, 52, 12, 3436-42, Waverly Press, Baltimore, Md.</p>
+
+<p class=MsoNormal>4. Tomita,Masaru; Nakajima,Hiromu; Naito,Yasuhiro;
+Ohno,HiroshiConstruction of a biological tissue model based on a single-cell
+model: a computer simulation of metabolic heterogeneity in the liver
+lobule.Artificial life, 2008, 14, 1, 3-28, MIT Press, Cambridge, MA</p>
+
+<p class=MsoNormal>5. Zacharewski,Timothy R.; Jump,Donald B.; Harkema,Jack R.;
+Chittim,Brock; Tashiro,Colleen; Burgoon,Lyle D.; Boverhof,Darrell R.Temporal
+and dose-dependent hepatic gene expression patterns in mice provide new
+insights into TCDD-Mediated hepatotoxicity.Toxicological Sciences, 2005, 85, 2,
+1048-63, Academic Press, San Diego, CA</p>
+
+<p class=MsoNormal>6. Jungermann,K.Zonation of metabolism and gene expression
+in liver.Histochemistry and Cell Biology, 1995, 103, 2, 81-91, Springer-Verlag,
+Heidelberg</p>
+
+<p class=MsoNormal>7. Gebhardt,R.Metabolic zonation of the liver: regulation
+and implications for liver function.Pharmacology therapeutics, 1992, 53, 3,
+275-354, Pergamon, <st1:City w:st="on"><st1:place w:st="on">Oxford</st1:place></st1:City></p>
+
+<p class=MsoNormal>8. Walsh,P J.; Mommsen,T P.Metabolic and enzymatic
+heterogeneity in the liver of the ureogenic teleost Opsanus beta.The journal of
+experimental biology, 1991, 156, 407-18, Published for the Company of
+Biologists Ltd. by the Cambridge University Press, <st1:City w:st="on"><st1:place
+ w:st="on">London</st1:place></st1:City></p>
+
+<p class=MsoNormal>9. Sawada,Yasufumi; Ohtani,Hisakazu; Tsujimoto,Masayuki;
+Kogetsu,Hirokuni; Kumagai,Yoichi; Nasu,RisaPhysiologically based
+pharmacokinetic model for pralmorelin hydrochloride in rats.Drug metabolism and
+disposition, 2005, 33, 10, 1488-94, American Society for Pharmacology and
+Experimental Therapeutics, etc.], [Bethesda, Md., etc.,</p>
+
+<p class=MsoNormal>10. Lamers,W H.; Grange,T.; Moorman,A F.; Ruijter,J M.;
+Sassi,H.; Christoffels,V M.A mechanistic model for the development and
+maintenance of portocentral gradients in gene expression in the
+liver.Hepatology, 1999, 29, 4, 1180-92, No longer published by Elsevier,
+Philadelphia , PA</p>
+
+<p class=MsoNormal>11. Kaplowitz,N.; Ookhtens,M.; Yamamuro,W.; Wong,E.; Chan,E
+T.; Saiki,H.Zonal distribution of cysteine uptake in the perfused rat liver.The
+Journal of biological chemistry, 1992, 267, 1, 192-6, American Society for
+Biochemistry and Molecular Biology [etc.], [Baltimore, etc.]</p>
+
+<p class=MsoNormal>12. Kietzmann,T.; Jungermann,K.Oxygen: modulator of
+metabolic zonation and disease of the liver.Hepatology, 2000, 31, 2, 255-60, No
+longer published by Elsevier, <st1:City w:st="on"><st1:place w:st="on">Philadelphia</st1:place></st1:City>,
+PA</p>
+
+<p class=MsoNormal>13. Roze,D.; Michod,R E.Cooperation and conflict in the
+evolution of multicellularity.Heredity, 2001, 86, Pt 1, 1-7, Oliver and Boyd, <st1:City
+w:st="on"><st1:place w:st="on">London</st1:place></st1:City></p>
+
+<p class=MsoNormal>14. Turchin,Peter; Burtsev,MikhailEvolution of cooperative
+strategies from first principles.Nature, 2006, 440, 7087, 1041-4</p>
+
+<p class=MsoNormal>15. Axelrod, Robert; Axelrod,David E.; Pienta, Kenneth
+J.Evolution of cooperation among tumor cellsProceedings of the National Academy
+of Sciences of the United States of America, 2006, 103, 36, 13474, National
+Academy of Sciences</p>
+
+<p class=MsoNormal>16. Fardel,Olivier; Lagadic-Gossmann,Dominique;
+Guillouzo,André; Payen,Léa; Huc,Laurence; Loewert,Maud; Sparfel,LydieAcute
+cytotoxicity of the chemical carcinogen 2-acetylaminofluorene in cultured rat
+liver epithelial cells.Toxicology Letters, 2002, 129, 3, 245-54, Elsevier,
+Amsterdam,</p>
+
+<p class=MsoNormal>17. Walum, ErikAcute oral toxicityEnvironmental health
+perspectives, 1998, 106, Suppl 2, 497, National Institute of Environmental
+Health Science, [<st1:place w:st="on"><st1:City w:st="on">Research Triangle
+  Park</st1:City>, <st1:State w:st="on">N.C.</st1:State></st1:place>]</p>
+
+<p class=MsoNormal>19. Watkins,Technical Note: Q-LearningMachine learning,
+1992, 8, 3/4, 279, Kluwer Academic Publishers, Boston/U.S.A.</p>
+
+<p class=MsoNormal>20. Vincent,Evolutionary Game Theory, Natural Selection, and
+Darwinian Dynamics2005, <st1:PlaceName w:st="on">Cambridge</st1:PlaceName> <st1:PlaceType
+w:st="on">University</st1:PlaceType> Press, <st1:City w:st="on"><st1:place
+ w:st="on">Cambridge</st1:place></st1:City></p>
+
+<p class=MsoNormal>21. Katz,N.; Jungermann,K.Functional specialization of
+different hepatocyte populations.Physiological reviews, 1989, 69, 3, 708-64,
+American Physiological Society</p>
+
+<p class=MsoNormal>22. Birnbaum,L S.; Alcasey,S K.; Lucier,G W.; Lindros,K O.;
+Blanton,J.; Walker,N J.; Richardson,V M.; Santostefano,M J.Dose-dependent
+localization of TCDD in isolated centrilobular and periportal
+hepatocytes.Toxicological Sciences, 1999, 52, 1, 9-19, Academic Press, San
+Diego, CA</p>
+
+<p class=MsoNormal>23. HSDB Hazardous Substances Data Bank2008, 2008, TOXNET
+United States National Library of Medicine, http://toxnet.nlm.nih.gov/</p>
+
+<p class=MsoNormal>24. Tatsuno,T.; Ito,E.; Terao,K.Liver injuries induced by
+cyclochlorotine isolated from Penicillium islandicum.Archives of toxicology,
+1984, 55, 1, 39-46, Springer-Verlag, Berlin</p>
+
+<p class=MsoNormal>25. Lin,Y C.; Nuber,D C.; Manabe,S.Zone-specific
+hepatotoxicity of gossypol in perfused rat liver.Toxicon, 1991, 29, 6, 787-90,
+Pergamon, Amsterdam,</p>
+
+<p class=MsoNormal>26. Thurman,R G.; Mason,R P.; Connor,H D.; Raleigh,J A.;
+Arteel,G E.; Stachlewitz,R F.Development and characterization of a new model of
+tacrine-induced hepatotoxicity: role of the sympathetic nervous system and
+hypoxia-reoxygenation.The Journal of pharmacology and experimental
+therapeutics, 1997, 282, 3, 1591-9, American Society for Pharmacology and
+Experimental Therapeutics, [Bethesda, Md.]</p>
+
+<p class=MsoNormal>27. Kendall,M W.Light and electron microscopic observations
+of the acute sublethal hepatotoxic effects of Mirex in the rat.Archives of
+environmental contamination and toxicology, 1979, 8, 1, 25-41, Springer, New
+York</p>
+
+<p class=MsoNormal>28. Lindros,K O.; Anundi,I.Evidence for cytochrome P450
+2E1-mediated toxicity of N-nitrosodimethylamine in cultured perivenous
+hepatocytes from ethanol treated rats.Pharmacology toxicology, 1992, 70, 6 Pt
+1, 453-8, Munksgaard International Publishers], [Copenhagen</p>
+
+<p class=MsoNormal>29. Evans,J G.; Lake,B G.Effect of pretreatment with some
+mixed-function oxidase enzyme inducers on the acute hepatotoxicity of coumarin
+in the rat.Food and Chemical Toxicology, 1993, 31, 12, 963-70, Pergamon, Oxford</p>
+
+<p class=MsoNormal>30. Pohl,Lance R.; Shah,Anjali G.; George,John W.;
+Martin,Jackie L.; Amouzadeh,Hamid R.; Reilly,Timothy P.; Masubuchi,Yasuhiro;
+Bourdi,MohammedProtection against acetaminophen-induced liver injury and
+lethality by interleukin 10: role of inducible nitric oxide
+synthase.Hepatology, 2002, 35, 2, 289-98, No longer published by Elsevier,
+Philadelphia, PA</p>
+
+<p class=MsoNormal>31. Sipes,I G.; Schram,K H.; Carter,D E.; Eigenberg,D
+A.Examination of the differential hepatotoxicity of diallyl phthalate in rats
+and mice.Toxicology and Applied Pharmacology, 1986, 86, 1, 12-21, Academic
+Press, San Diego [etc.]</p>
+
+<p class=MsoNormal>33. Thurman,R G.; Kauffman,F C.; Matsumura,T.; Belinsky,S
+A.Rates of allyl alcohol metabolism in periportal and pericentral regions of
+the liver lobule.Molecular pharmacology, 1984, 25, 1, 158-64, American Society
+for Pharmacology and Experimental Therapeutics, [Bethesda, Md.]</p>
+
+<p class=MsoNormal>35. El Samad, Hana; Khammash, M.; Homescu, Chris; Petzold,
+LindaOptimal Performance of the Heat-Shock Gene Regulatory NetworkIFAC World
+Congress, 2005, 16, <st1:place w:st="on"><st1:City w:st="on">Prague</st1:City>,
+ <st1:country-region w:st="on">Czech Republic</st1:country-region></st1:place></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt'>Appendix </span></b></p>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<p class=MsoNormal><b>Table A1</b>. Physiological parameters of tissues in a
+250-g rat <span style='color:#3366FF'>{{</span>9 Sawada,Yasufumi 2005<span
+style='color:#3366FF'>}}</span>.</p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;mso-padding-alt:0in 0in 0in 0in'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=104 valign=top style='width:77.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span lang=FR style='mso-ansi-language:FR'>Tissue </span></p>
+  </td>
+  <td width=90 valign=top style='width:67.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span lang=FR style='mso-ansi-language:FR'>Volume (ml) </span></p>
+  </td>
+  <td width=128 valign=top style='width:96.3pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span lang=FR style='mso-ansi-language:FR'>Flow rate
+  (ml/min) </span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=104 valign=top style='width:77.85pt;border:none;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>G.I.Tract </p>
+  </td>
+  <td width=90 valign=top style='width:67.5pt;border:none;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>13.1 </p>
+  </td>
+  <td width=128 valign=top style='width:96.3pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Qgi = 9.8 </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=104 valign=top style='width:77.85pt;border:none;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Liver </p>
+  </td>
+  <td width=90 valign=top style='width:67.5pt;border:none;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>10.3 </p>
+  </td>
+  <td width=128 valign=top style='width:96.3pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>QL = 11.8 </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width=104 valign=top style='width:77.85pt;border:none;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Blood vessels</p>
+  </td>
+  <td width=90 valign=top style='width:67.5pt;border:none;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>16.9 </p>
+  </td>
+  <td width=128 valign=top style='width:96.3pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>QB = 43 </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4;mso-yfti-lastrow:yes'>
+  <td width=104 valign=top style='width:77.85pt;border:none;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Other </p>
+  </td>
+  <td width=90 valign=top style='width:67.5pt;border:none;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>176.9 </p>
+  </td>
+  <td width=128 valign=top style='width:96.3pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>n/a</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<p class=MsoNormal><b>Table A2.</b> Rate constant values.</p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;mso-padding-alt:0in 0in 0in 0in'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=69 valign=top style='width:52.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Parameter </p>
+  </td>
+  <td width=59 valign=top style='width:44.55pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Value </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=69 valign=top style='width:52.0pt;border:none;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span lang=FR style='mso-ansi-language:FR'>q<sub>1</sub> </span></p>
+  </td>
+  <td width=59 valign=top style='width:44.55pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span lang=FR style='mso-ansi-language:FR'>9.8 </span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=69 valign=top style='width:52.0pt;border:none;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span lang=FR style='mso-ansi-language:FR'>q<sub>3</sub> </span></p>
+  </td>
+  <td width=59 valign=top style='width:44.55pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span lang=FR style='mso-ansi-language:FR'>11.8 </span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width=69 valign=top style='width:52.0pt;border:none;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>q<sub>41</sub> </p>
+  </td>
+  <td width=59 valign=top style='width:44.55pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>2.0 </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td width=69 valign=top style='width:52.0pt;border:none;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>q<sub>42</sub> </p>
+  </td>
+  <td width=59 valign=top style='width:44.55pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>9.8 </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td width=69 valign=top style='width:52.0pt;border:none;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>q<sub>43</sub> </p>
+  </td>
+  <td width=59 valign=top style='width:44.55pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>1 </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td width=69 valign=top style='width:52.0pt;border:none;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>q<sub>5</sub> </p>
+  </td>
+  <td width=59 valign=top style='width:44.55pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>0.5 </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7;mso-yfti-lastrow:yes'>
+  <td width=69 valign=top style='width:52.0pt;border:none;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>q<sub>in</sub> </p>
+  </td>
+  <td width=59 valign=top style='width:44.55pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>0 </p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+<P><!-- Start of StatCounter Code --><SCRIPT LANGUAGE="javascript">
+var sc_project=2455995;
+var sc_invisible=0;
+var sc_partition=23;
+var sc_security="9db434c4";
+</SCRIPT><SCRIPT LANGUAGE="javascript" SRC="http://www.statcounter.com/counter/counter.js"></SCRIPT><noscript><A HREF="http://www.statcounter.com/" TARGET="_blank"><IMG SRC="http://c24.statcounter.com/counter.php?sc_project=2455995&amp;java=0&amp;security=9db434c4&amp;invisible=0" NAME="graphics1" ALT="free hit counter" ALIGN=BOTTOM WIDTH=1 HEIGHT=1 BORDER=0></A></noscript><!-- End of StatCounter Code -->
+</P>
+
+</body>
+
+</html>
