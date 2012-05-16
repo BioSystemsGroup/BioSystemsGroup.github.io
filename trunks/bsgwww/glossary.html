@@ -24,6 +24,7 @@
   <dt>n. assertion:</dt> <dd>a statement that acts as an atomic or composite element of an argument or representation; an emphatic statement; an affirmation; a claim that a given state or situation is the case.  The Indo-European root is "ser-" "to line up" or "to arrange".  Assertions carry the connotation that they are well-formed or syntactically correct statements. They also connote a skepticism as to their veracity.</dd>
   <dt>n. attribute:</dt> <dd>a characteristic or quality, inherent in or ascribed to, someone or something.  Syn: property.  In computing, an attribute is a named value or relationship that exists for some or all instances of some class and is directly associated with that instance or that class.</dd>
   <dt>v. attribute:</dt> <dd>to regard as a characteristic or quality of a person or thing, including a cause effect relationship.  Syn. ascribe, impute.</dd>
+  <dt><a name="bisimulation">n. bisimulation</a></dt> <dd>two modules whose state transitions are identical.  This is the dual of <a href="#congruence">congruence</a>.</dd>
   <dt>n. calibration:</dt> <dd>the confirmation of and/or adjustment to parameters such that standard inputs result in standard outputs.</dd>
   <dt>adj. complex:</dt> <dd>consisting of interconnected or interwoven parts; composed of two or more units; involved or intricate.  Technically, a complex system has many cause-effect relationships or one in which it is difficult to tease out cause-effect relations.</dd>
   <dt>n. complexity:</dt> <dd>a measure of the number of constituents of a system and their degree of interconnection.  Technically, the resource requirements and representation difficulty associated with a model or simulation is a direct function of its complexity.
@@ -38,6 +39,7 @@
   </dd>
   <dt>n. concurrent simulation:</dt> <dd>a simulation in which actions are partially ordered such that some actions are independent and might, in principle, happen at the same time or be executable regardless of the execution of other actions.</dd>
   <dt>n. concurrent simulator:</dt> <dd>a simulator that facilitates concurrent simulations.</dd>
+  <dt>n. <a name="congruence">congruence</a></dt> <dd>two modules have identical sets of possible states.  This is the dual of <a href="#bisimulation">bisimulation</a>.</dd>
   <dt>v. construct:</dt> <dd>to form by assembling or combining parts; build.
     <br>Notes: Construct literally parses into "to pile up" or "to spread together". The implication being that the verb doesn't assume that the composition is done purposefully. Construction can be accidental, haphazard, and arbitrary as well as well-planned or thought out.
   </dd>
@@ -56,6 +58,9 @@
   <dt>n. correct simulation:</dt> <dd>a simulation that is verifiable in every relevant characteristic.</dd>
   <dt>n. correct simulator:</dt> <dd>a simulator that generates correct simulations.</dd>
   <dt>n. correctness:</dt> <dd> The degree to which some thing is free of error.</dd>
+  <dt>n. co-simulation:</dt>
+  <dd>a composition of modules relying on heterogeneous formalisms or computational paradigms.  Formally: Co-simulation is a special form of <a href="#observational_congruence">observational congruence</a> or <a href="#weak_bisimulation">weak bisimulation</a> because in order to hook them together, the outputs of the source module must match, in both states and state transitions, the inputs of the destination module.
+  </dd>
   <dt>n. crossmodel validity:</dt> <dd>synonym for validity.  Validity assumes two or more models.  Sometimes, however, an assumption is made stating that the truth is accessible and one model is more real than another.  Crossmodel validity is used to emphasize that two models are being compared rather than comparing one model to a real system.</dd>
   <dt>n. derivability:</dt> <dd>the state or degree of being derivable.</dd>
   <dt>adj. derivable:</dt> <dd>capable of being derived.  This means that if C can be derived from A, then C and A have characteristics that give evidence of a particular inheritance relationship from A to C.</dd>
@@ -98,7 +103,9 @@
   <dt>n. morphism:</dt> <dd>an abstract directional relationship between two different objects.  Technically: Let X and Y be objects of any kind.  Then a morphism f is defined as a relationship from X to Y, denoted by f: X -> Y such that the following operations are defined for the morphism:<br>
     Domain: X = dom(f)<br>
     Codomain: Y = cod(f)
-  </dd> 
+  </dd>
+  <dt><a name="observational_congruence">adj. observational congruency:</a></dt> <dd>a subset of observable states of one module are identical with a subset of the observable states of another module.
+  </dd>
   <dt>n. parallel:</dt> <dd>having comparable parts, analogous aspects, or readily recognized similarities; having the same tendency or direction; continuing a resemblance through many particulars; applicable in all essential parts; alike; similar.
     <br>Notes: The gist of the word is to be alike, to have the same properties or tendencies.
   </dd>
@@ -167,6 +174,8 @@
  <dt>v. verify:</dt> <dd>(1) to argue the truth of by presentation of evidence or testimony; substantiate. (2) to determine or test the truth or accuracy of, as by comparison, investigation, or reference; regulate by conducting a parallel experiment or comparing with another standard.  Technically, to compare and contrast two or more statements.</dd>
  <dt>n. verity:</dt> <dd>the quality or condition of being true, factual, or trustworthy.
    <br>Notes: Verity is distinguishable from validity.  Verity targets ontological truth, regardless of any arguments or belief.  Validity targets effective formal systems and conclusions that follow from premises.  The result is that, in M&S, verification becomes the incontrovertible differences between a model and its implementation whereas validation becomes the arguable relationship between a representation and reality.  One cannot verify a representation against reality because of the ontological wall.  One can only validate a representation against reality.  However, one can verify one representation against another.  One can also validate one representation against another.  Validation can be considered a weak type of verification or verification can be considered a strong type of validation.  So, although they are distinguishable, they both target the same issue: trust.
+ </dd>
+ <dt><a name="weak_bisimulation">n. weak bisimulation</a></dt> <dd>two modules whose sets of state transitions have nonzero intersection.  I.e. the two modules share a common subset of state transitions.
  </dd>
 </dl>
 </body>
