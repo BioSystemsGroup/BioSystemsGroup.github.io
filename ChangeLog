@@ -1,4 +1,9 @@
 2012-05-15  glen e. p. ropella  <gepr@tempusdictum.com>
 
+	* glossary.html: New file containing glossary definitions.  This
+	will make it easier to keep this and the one on furm.org in sync.
+
+	* research_dictionary.html: Split glossary out from page decorations and nav.
+
 	* index.htm (newwindow): Update all changes made by others.
 
