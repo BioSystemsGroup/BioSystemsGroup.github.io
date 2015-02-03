@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+html {overflow-y: scroll; background-color: white;}
+
+body {
+	background-color: white;
+}
+
+p {
+	font-size: 1em;
+}

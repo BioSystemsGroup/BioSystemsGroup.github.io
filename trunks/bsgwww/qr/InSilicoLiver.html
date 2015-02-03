@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>Validated In-Silico Liver</title>
+<link href="qr.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<p><b>Validated In-Silico Liver</b></p>
+<p>We start with a previous in-silico liver (ISL) that has achieved drug clearance [1] and enzyme induction/elimination validation targets [2].  The ISL is described in detail in [2].  Briefly a liver lobule is represented by a directed graph of sinusoid segments (SSs), vascular tubes, flowing from the PV to the CV.  There are three zones from PV to CV.  The periportal Zone 1 has 45 SS nodes and significant intrazone edges (20).  Zone 2 has 20 nodes and 10 intrazone edges.  Zone 3 has three nodes and 0 intrazone edges.  APAP objects are injected into the PV, flow through the SS network and those that exit the ISL are collected and counted at the CV.  
+</p><p>
+Each SS consists of a concentric layering of three cylindrical grids wrapped around a core queue.  The core conducts a laminar flow (maps to blood) along the length of the SS.  Object movement in Grid A maps to turbulent and viscous flow along the endothelial lining of the sinusoid.  It does so using a pseudo-random movement biased toward the SS outlet.  Grid B is partially populated by Endothelial Cell (ECell) objects.  Grid C maps to the Space of Disse and is partially populated by Hepatocyte objects.  ECells contain Binder objects that can sequester mobile objects for some number of simulation cycles. Hepatocytes also contain Binders, but they are called Enzymes, because they may also metabolize bound compounds according to a probabilistic parameter. 
+</p><p>
+1 simulation cycles maps to 1 second.
+</p><p>
+1. <a href="http://jpet.aspetjournals.org/content/334/1/124.short">http://jpet.aspetjournals.org/content/334/1/124.short</a><br />
+2. <a href="http://www.igi-global.com/article/content/72718">http://www.igi-global.com/article/content/72718</a>
+</p>
+</body>
+</head>
+</html>
